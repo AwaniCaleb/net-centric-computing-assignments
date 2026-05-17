@@ -40,4 +40,16 @@ public class DBConnection {
         
         return connection;
     }
+    
+    // Quick test method
+    public static void main(String[] args) {
+        System.out.println("Testing online domain connection...");
+        Connection testConn = getConnection();
+        
+        if (testConn != null) {
+            System.out.println("SUCCESS! Ready to build the web app.");
+        } else {
+            System.out.println("FAILED. Check your config.properties and online domain IP unblocker.");
+        }
+    }
 }
