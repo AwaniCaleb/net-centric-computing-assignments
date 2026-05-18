@@ -26,3 +26,5 @@ replay_pid*
 
 # Mine
 config.properties
+/.classpath
+/.project
